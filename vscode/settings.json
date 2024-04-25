@@ -2,18 +2,27 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontWeight": "450",
-    "editor.minimap.enabled": false,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "editor.inlineSuggest.enabled": true,
+    "editor.minimap.enabled": false,
+    "editor.smoothScrolling": true,
     "editor.workWrap": "on",
 
     "extensions.ignoreRecommendations": true,
-
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.explorerKind": "external",
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.fontFamily": "monospace",
 
+    "workbench.editor.tabActionCloseVisibility": true,
     "workbench.iconTheme": "material-icon-theme",
+
+    "rust-analyzer.showUnlinkedFileNotification": false,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
 
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -38,17 +47,12 @@
         "editor.tabSize": 2
     },
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "[rust]": {
         "editor.tabSize": 4,
         "editor.defaultFormatter": "rust-lang.rust-analyzer",
         "editor.formatOnSave": true,
-        "editor.wordWrapColumn": 80,
-
-        "rust-analyzer.showUnlinkedFileNotification": false,
-        "rust-analyzer.inlayHints.typeHints.enable": false,
-        "rust-analyzer.inlayHints.parameterHints.enable": false,
-        "rust-analyzer.inlayHints.chainingHints.enable": false
+        "editor.wordWrapColumn": 80
     }
 }
