@@ -12,6 +12,18 @@
 
     "extensions.ignoreRecommendations": true,
     "security.workspace.trust.untrustedFiles": "open",
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "node_modules": true,
+        "target": true
+    },
+
     "terminal.explorerKind": "external",
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.fontFamily": "monospace",
@@ -23,6 +35,10 @@
     "rust-analyzer.inlayHints.typeHints.enable": false,
     "rust-analyzer.inlayHints.parameterHints.enable": false,
     "rust-analyzer.inlayHints.chainingHints.enable": false,
+
+    "search.exclude": {
+        "**/node_modules": true
+   },
 
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -47,7 +63,11 @@
         "editor.tabSize": 2
     },
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit",
+            "source.fixAll": "explicit"
+        }
     },
     "[rust]": {
         "editor.tabSize": 4,
